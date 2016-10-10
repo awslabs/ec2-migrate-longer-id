@@ -11,11 +11,12 @@ over to the new format.
 
 This tool can show you the status of your account. It will go through all regions with the `--status` flag and return
 the current status of each IAM ARN (user or role) and the root user and return True or False for each of the longer
-ID types currently. Those id types are:  
-`Instance  
-Reservation  
-Snapshot  
-Volume`  
+ID types currently. Those id types are (as of the time of this writing):  
+`Instance`  
+`Reservation`  
+`Snapshot`  
+`Volume`  
+=======
 
 It currently spins up 50 threads and the threads pull from a queue that has been populated by iterating over regions,
 IAM roles, IAM users, the root user, and each resource type. This queue is then used by the threads to make an API call
