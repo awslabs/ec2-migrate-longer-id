@@ -89,11 +89,19 @@ You can Combine Status to be used with revert and convertself and will output th
 
 All possible usage combinations:
 `--status`
+
 `--convertonly`
+
 `--convertself`
+
 `--revert`
+
 `--revert --status`
+
 `--revert --convertonly`
+
 `--revert --convertself --convertonly`
+
 `--convertself --status`
+
 `--convertself --convertonly`
