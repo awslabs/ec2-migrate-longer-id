@@ -359,7 +359,7 @@ def main():
         clibool = False
 
     if args.convertself:
-        threadqueue = selfconvertqueue(regions, idresources, idresources)
+        threadqueue = selfconvertqueue(regions, idresources)
 
     if len(sys.argv) > 2 and args.convertonly and not args.convertself and not args.convertonly:
         log.info("invalid selection. convertonly can ONLY be used as the sole argument or with "
