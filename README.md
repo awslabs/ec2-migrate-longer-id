@@ -57,7 +57,7 @@ Debian/Ubuntu:
 `apt-get install python-virtualenv`  
 `virtualenv -p /usr/bin/python2.7 venv`  
 `source venv/bin/activate`  
-`pip install boto3`  
+`pip install boto3 future`  
 
 *NOTE*: If you wish to pull this from github, you likely want/need git installed to get the files. Please follow instructions
 to install git here:  
