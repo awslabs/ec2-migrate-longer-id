@@ -87,6 +87,8 @@ You can Combine Status to be used with revert and convertself and will output th
 `./migratelongerids.py --convertself --status` OR  
 `./migratelongerids.py --revert --status`  
 
+You can use the optional --profile PROFILE to specify a different profile to use from the ~/.aws/credentials file
+
 All possible usage combinations:  
 `--status`  
 `--convertonly`  
@@ -96,4 +98,4 @@ All possible usage combinations:
 `--revert --convertonly`  
 `--revert --convertself --convertonly`  
 `--convertself --status`  
-`--convertself --convertonly`  
+`--convertself --convertonly` 

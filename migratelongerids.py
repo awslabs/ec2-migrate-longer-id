@@ -317,7 +317,8 @@ def main():
     --revert --status
     --revert --convertself --convertonly
     --convertself --status
-    --convertself --convertonly"""
+    --convertself --convertonly
+    [--profile]"""
 
     #Variables:
     clibool = True
@@ -339,8 +340,11 @@ def main():
                                                                    'end.')
     parser.add_argument('--convertself', action='store_true', help='This converts the single ARN in'
                                                                    'all regions.')
+    parser.add_argument('--profile', help='Use different profile credentials')
 
     args = parser.parse_args()
+
+    boto3.setup_default_session(profile_name=args.profile)
 
     arn = 'all'
     regions = getregions()
