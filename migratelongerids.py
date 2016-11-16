@@ -19,7 +19,7 @@ import threading
 import sys
 from time import sleep
 import logging
-from queue import Queue
+from Queue import Queue
 from botocore.client import Config
 # try fail-able imports and imports with versioning requirements
 try:
